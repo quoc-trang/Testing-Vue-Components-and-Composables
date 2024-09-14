@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page {
+  @apply h-screen flex items-center justify-center gap-3 p-4;
+}
+.container {
+  @apply max-w-full w-[600px];
+}
+
+h1 {
+  @apply text-2xl;
+}
+
+.btn-container {
+  @apply flex gap-2 my-4;
+}
+.btn-msg {
+  @apply text-xs;
+}
+
+.form-control {
+  @apply mt-5;
+}
+
+select {
+  @apply select select-bordered;
+}
+
+.mockup-code {
+  @apply mt-5 h-96 overflow-auto;
+}
+.mockup-code pre:before {
+  display: none;
+}
+
+.mockup-code pre {
+  @apply px-4;
+}
+
+input {
+  @apply input input-bordered w-16;
+}
+
+@media (max-height: 600px) {
+  .page {
+    @apply h-auto;
+  }
+}
